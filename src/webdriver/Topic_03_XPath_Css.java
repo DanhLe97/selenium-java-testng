@@ -10,8 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-
-public class Topic_02_Selenium_Locator {
+public class Topic_03_XPath_Css {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String osName = System.getProperty("os.name");
@@ -27,48 +26,23 @@ public class Topic_02_Selenium_Locator {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		// mở trang register
-//		driver.get("https://automationfc.github.io/basic-form/");
+		driver.get("https://www.facebook.com/");
 	}
-@Test
-	public void TC_01_ID() {
-		driver.get("https://automationfc.github.io/basic-form/");
-		System.out.println("Text cua the H5: "+ driver.findElement(By.xpath("//h5[@id='nested']")).getText());
-}
-//	@Test
-//	public void TC_02_Class() {
-//
-//	}
-//
-//	@Test
-//	public void TC_03_Name () {
-//
-//	}
-//	
-//	@Test
-//	public void TC_04_TagName () {
-//
-//	}
-//	
-//	@Test
-//	public void TC_05_LinkText() {
-//
-//	}
-//	
-//	@Test
-//	public void TC_06_PartialLinkText() {
-//
-//	}
-//	
-//	@Test
-//	public void TC_07_Css () {
-//
-//	}
-//	
-//	@Test
-//	public void TC_08_XPath() {
-//
-//	}
+
+	@Test
+	public void TC_01_() {
+		
+	}
+
+	@Test
+	public void TC_02_() {
+
+	}
+
+	@Test
+	public void TC_03_() {
+
+	}
 
 	@AfterClass
 	public void afterClass() {
